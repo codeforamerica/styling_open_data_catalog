@@ -1,0 +1,47 @@
+/* lte IE7  */
+
+.clear {line-height: 1px; height: 1px;}
+
+body {text-align:center}
+#wrapper {text-align:left}
+
+#home_twitter  {width: 255px;}
+
+#home_additions li, #home_twitter li{
+    clear:none;
+    width: 230px;
+    }
+    
+#home_additions {
+  margin-right: -30px;
+}
+
+.resource {position: static; }
+.resource #url_types {left: 0; top: 0; zoom: 1; position: relative; margin-left: -40px; margin-top: -40px;}
+
+#filter {width: 200px;}
+
+.tab_body {zoom: 1}
+
+#left_container ul li.separator {height: 1px; padding: 0;}
+
+.tab_image {height: 150px}
+
+
+.ui-dialog-content, .ui-dialog .ui-dialog-content {padding: 0}
+
+#tab_image_container .tab_image_pager a {  font-size: .1em;}
+#tab_image_container .tab_image_pager li{display:inline;}
+
+.idea_item {padding-bottom:0}
+
+#search #search_qs {margin: 10px}
+#search #search_img {top: 18px;}
+
+#n_search {margin-top: -10px; padding: 2px 6px 0 5px}
+#n_search #n_search_img {top:20px; }
+#n_search_qs {margin-top: 8px; margin-left: 5px;}
+
+.button#nominate_button {margin-top: 6px;}
+
+#form_container.nomination_form .button {margin-top: -30px}

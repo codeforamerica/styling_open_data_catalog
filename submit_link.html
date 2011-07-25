@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+		<title>OpenDataBoston - Submit Data</title>
+
+    
+
+    <script type="text/javascript" src="/static/script/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="/static/script/jquery-ui-1.8.14.custom.min.js"></script>
+    <link rel="stylesheet" href="/static/style/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/style/jquery-ui-1.8.14.custom.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/style/style.css" type="text/css"/>
+    <!--[if IE 9 ]>
+        <link rel="stylesheet" href="style/ie9.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="style/ie8.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lte IE 7]>
+        <link rel="stylesheet" href="style/ie7.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" href="style/ie6.css" type="text/css"/>
+    <![endif]-->
+
+    <!-- I don't know if we need to keep these? -->
+    <script type="text/javascript" src="/static/StarRating/jquery.rating.js"></script>
+    <script type="text/javascript" src="/static/jquery.query-2.1.7.js"></script>
+    <script type="text/javascript" src="/static/odp.js"></script>
+    <!-- TYPEKIT -->
+    <script type="text/javascript" src="http://use.typekit.com/nni2gly.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="/static/StarRating/jquery.rating.css" type="text/css"/>
+
+    <script type="text/javascript">
+        odp.site_root = "";
+    </script>
+
+    
+	<script>
+		$(document).ready(function () {
+      		odp.getTags();
+			odp.setupSearchInput();
+
+			$("#id_release_date").datepicker();
+            $('input:checkbox').next('br').remove() 
+		});
+	</script>
+
+
+    
+    
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      //_gaq.push(['_setAccount', 'UA-XXXXXXXXX']);
+      //_gaq.push(['_trackPageview']);
+
+      //(function() {
+      //  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      //  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      //  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      //})();
+    </script>
+	</head>
+
+	<body   class="base_body">
+    	<div id="wrapper">
+    		
+
+<div id="left_container">
+    <a href="/" id="logo"><img src="/static/images/logo.png"/></a>
+
+    <div id="tags">
+        <h2 class="grid">Data</h2>
+		<ul>
+            <li><a href="/opendata/?sort=name&dir=asc">All Data</a></li>
+            <li id="tag_list"></li>
+            <li class="separator"></li>
+            <li class="icon-xsm" id="ideas"><a href="/ideas">Idea Gallery</a></li>
+            <li class="icon-xsm" id="add"><a href="/opendata/submit/">Submit Data</a></li>
+            <li class="icon-xsm" id="nominate"><a href="/opendata/nominate/?sort=rating_score&dir=desc">Nominate Data</a></li>
+		</ul>
+	</div>
+
+	<div id="abouts">
+	  <h2 class="grid">About</h2>
+		<ul>
+			<li id="about"><a href="/about/">About</a></li>
+			<li id="faq"><a href="/faq/">FAQ</a></li>
+            <li id="usefullinks"><a href="/usefullinks/">Useful Links</a></li>
+			<li id="contact"><a href="/contact/">Contact</a></li>
+			<li id="terms"><a href="/terms/">Terms</a></li>
+            <li id="feeds"><a href="/feeds/">RSS Feeds</a></li>
+            
+			<li class="separator"></li>
+            <li id="admin"><a href="/_admin_">Administration</a></li>
+            
+		</ul>
+	</div>
+
+</div>
+
+
+	<div id="center_container">
+          <div id="account">
+				<div id="account_text" class="small_dark"></div>
+				
+					<a href="/accounts/logout/?next=/">Logout</a>
+				
+			</div>
+
+        <div id="center_header">
+      <div id="search">
+				<form method="GET" id="search_form" >
+					<div id="search_qs">
+						<input type="text" id="qs" value="Search for data" />
+					</div>
+				</form>
+				<div id="search_img"></div>
+			</div>
+    </div>
+
+		<div id="center_content">
+			
+<h1 id="title">Submit Your Data</h1>
+<h2 id="description">We realize that we haven't listed every Philadelphia-based open data set in the OpenDataPhilly catalog.
+	If you have a specific data set that you think should be included, let us know by completing and
+	submitting the form below. We'll review the information and determine whether the data set should
+	be included in OpenDataPhilly. The data must be specific to Philadelphia, available online, and contain
+	structured data. A full list of review criteria is available on the <a href="/faq/">FAQ</a> page.
+	<br /><br />
+	This form is for recommending specific data sets, applications, or APIs. If you'd like to nominate a
+	general area where you think data should be more easily available, visit the <a href="/opendata/nominate/?sort=rating_score&dir=desc">Nominate Data</a> page.
+</h2>
+<div id="form_container" class="resource">
+	<form action="/opendata/submit/" method="post">
+		<div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='88d205656230f1b8ff9304ef3898361a' /></div>
+		
+
+		<table>
+			<tr><th><label for="id_dataset_name">API / App name:</label></th><td><input id="id_dataset_name" type="text" name="dataset_name" maxlength="255" /></td></tr>
+<tr><th><label for="id_url">API / App URL:</label></th><td><input id="id_url" type="text" name="url" maxlength="255" /></td></tr>
+<tr><th><label for="id_organization">Organization:</label></th><td><input id="id_organization" type="text" name="organization" maxlength="255" /></td></tr>
+<tr><th><label for="id_copyright_holder">Copyright holder:</label></th><td><input id="id_copyright_holder" type="text" name="copyright_holder" maxlength="255" /></td></tr>
+<tr><th><label for="id_contact_email">Contact email:</label></th><td><input id="id_contact_email" type="text" name="contact_email" maxlength="255" /></td></tr>
+<tr><th><label for="id_contact_phone">Contact phone:</label></th><td><input id="id_contact_phone" type="text" name="contact_phone" maxlength="255" /></td></tr>
+<tr><th><label for="id_time_period">Valid time period:</label></th><td><input id="id_time_period" type="text" name="time_period" maxlength="255" /></td></tr>
+<tr><th><label for="id_release_date">Release date:</label></th><td><input type="text" name="release_date" id="id_release_date" /></td></tr>
+<tr><th><label for="id_area_of_interest">Geographic area:</label></th><td><input id="id_area_of_interest" type="text" name="area_of_interest" maxlength="255" /></td></tr>
+<tr><th><label for="id_update_frequency">Update frequency:</label></th><td><select name="update_frequency" id="id_update_frequency">
+<option value="" selected="selected">---------</option>
+</select></td></tr>
+<tr><th><label for="id_coord_system">Coordinate system:</label></th><td><select multiple="multiple" name="coord_system" id="id_coord_system">
+</select></td></tr>
+<tr><th><label for="id_types">Data types:</label></th><td><select multiple="multiple" name="types" id="id_types">
+</select></td></tr>
+<tr><th><label for="id_formats">Data formats:</label></th><td><select multiple="multiple" name="formats" id="id_formats">
+</select></td></tr>
+<tr><th><label for="id_description">Describe this dataset:</label></th><td><textarea id="id_description" rows="10" cols="40" name="description"></textarea></td></tr>
+<tr><th><label for="id_usage_limitations">Are there usage limitations?</label></th><td><textarea id="id_usage_limitations" rows="10" cols="40" name="usage_limitations"></textarea></td></tr>
+<tr><th><label for="id_collection_process">How was the data collected?</label></th><td><textarea id="id_collection_process" rows="10" cols="40" name="collection_process"></textarea></td></tr>
+<tr><th><label for="id_data_purpose">Why was the data collected?</label></th><td><textarea id="id_data_purpose" rows="10" cols="40" name="data_purpose"></textarea></td></tr>
+<tr><th><label for="id_intended_audience">Who is the intended audience?</label></th><td><textarea id="id_intended_audience" rows="10" cols="40" name="intended_audience"></textarea></td></tr>
+<tr><th><label for="id_why">Why should the data be included in this site?</label></th><td><textarea id="id_why" rows="10" cols="40" name="why"></textarea></td></tr>
+<tr><th></th><td><input type="checkbox" name="certified" id="id_certified" /><br /><span class="helptext">I am the copyright holder or have permission to release this data</span></td></tr>
+<tr><th></th><td><input type="checkbox" name="terms" id="id_terms" /><br /><span class="helptext">I have read and agree with the site's <a href='/terms/' target='_blank'>terms of use</a></span></td></tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+					<input class="button" type="submit" value="submit"/>
+					<input class="button" type="reset" value="reset" onclick="window.location='/opendata/submit/link/'"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+		</div>
+	</div>
+
+
+        	<div id="footer">
+		<a href="http://azavea.com" id="azavea_logo"></a>
+		<a href="http://newurbanmechanics.org" id="monum_logo"></a>
+		<a href="http://codeforamerica.org" id="cfa_logo"></a>
+	</div>
+
+    	</div>
+
+      
+
+	</body>
+</html>

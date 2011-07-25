@@ -1,0 +1,48 @@
+#home_idea_label {margin-bottom: -75px}
+
+
+
+.resource, .idea_item , .tab_body, .button, .nomination_form, #search, #n_search, #tab_image_container .tab_image_pager a  {
+filter:
+progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=45, Strength=3)
+progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=135, Strength=3)
+progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=225, Strength=3)
+progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=315, Strength=3);
+position: relative;
+zoom: 1;
+}
+
+
+ul.tab_header li.tab_button {
+filter:
+progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=45, Strength=3)
+progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=315, Strength=3);
+position: relative;
+zoom: 1;
+}
+
+
+/* to compensate for shadow filters */
+.tab_body {margin-top: 0; top: -6px;}
+.ui-tabs .ui-tabs-nav {margin-left: 3px; }
+
+#wrapper {padding-bottom: 30px}
+input {position:relative}
+
+/*ie7 doesnt like this */
+#search #search_qs {margin: 14px 9px 2px 14px}
+#search #search_img {top: 22px}
+
+/* other fixes */
+#n_search {padding: 6px 8px 0 8px}
+#n_search #n_search_img {top:24px}
+#n_search_qs {margin-top: 8px; margin-bottom: 3px; margin-left: 5px;}
+.button#nominate_button {margin-top: 6px;}
+
+.ui-widget-overlay {filter:alpha(opacity=30)}
+
+#form_container.nomination_form .button {padding-left: 10px; padding-right: 10px}
+
+.tab_image_detail {filter:alpha(opacity=70)}
+
+ .ui-datepicker {border: 1px solid #ccc;}
