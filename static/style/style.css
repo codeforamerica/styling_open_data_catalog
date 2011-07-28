@@ -283,7 +283,7 @@ margin-top: -14px;
 	position:relative;
 	float:left;
 	width:300px;
-	margin:10px 4px 4px;
+	margin:60px 4px 4px;
 	border:2px solid white;
 	background: url(images/background_search.gif) repeat-x;
 	-moz-border-radius: 3px;
@@ -1394,7 +1394,7 @@ width: 440px;
 #n_search {
 	position:relative;
 	padding:9px;
-	margin:10px 0 4px;
+	margin:15px 0 4px;
 	border:2px solid white;
 	background: url(images/background_search.gif) repeat-x;
 	-moz-border-radius: 3px;
