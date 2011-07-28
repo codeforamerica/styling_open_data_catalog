@@ -1113,12 +1113,13 @@ color: #333; margin-bottom: 5px;
 }
 
 #idea_header #header_description {
-  font-family: helvetica,sans-serif;
-  margin-bottom: 30px;
-  padding-top: 13px;
-	line-height: 1.4em;
-	font-size: 1.1em;
-	color: #949494;
+  font-size: .95em;
+  line-height: 1.35em;
+  margin-top: 22px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  color: #949494;
+  margin-left: 0.9px;
 }
 
 #idea_header #header_description a {
