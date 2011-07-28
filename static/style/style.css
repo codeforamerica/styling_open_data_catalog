@@ -1104,16 +1104,17 @@ color: #333; margin-bottom: 5px;
 	
    ------------------------------------------------- */
 #idea_header #header_title {
+	font-family: 'Oswald', sans-serif;
 	font-size: 1.6em;
 	font-weight: bold;
 }
 
 #idea_header #header_description {
+  font-family: helvetica,sans-serif;
   margin-bottom: 30px;
   padding-top: 13px;
 	line-height: 1.4em;
 	font-size: 1.1em;
-	font-weight: bold;
 	color: #949494;
 }
 
@@ -1391,7 +1392,7 @@ width: 440px;
 }
 
 #n_search {
-	position:relative 10px;
+	position:relative;
 	padding:9px;
 	margin:10px 0 4px;
 	border:2px solid white;
