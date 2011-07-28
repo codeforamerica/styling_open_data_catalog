@@ -344,7 +344,8 @@ margin-top: -14px;
 } 
 
 #account a {
-    
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
     padding: 11px;
   	color: #EF4036;
   	background color: black;
