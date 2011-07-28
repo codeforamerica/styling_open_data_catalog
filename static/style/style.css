@@ -345,6 +345,7 @@ margin-top: -14px;
 
 #account a {
   	color: #EF4036;
+  	background color: black;
 }
 #account_text {
 	padding-left:3px;
@@ -368,28 +369,31 @@ margin-top: -14px;
 .home a { color: #ec974f}
    
 .home h1 {
+    font-family: 'Oswald', sans-serif;
     font-size: 2.5em;
     font-weight: bold;
     color: white;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     margin: 61px 0 0 3px;
-    background: #545456;
-    padding: 15px;
+    background: #545454; 
+    padding: 17px;
+    text-shadow: #4A4A4A 2px 2px 2px; 
 }
 
 .home h1 strong {
+  font-family: 'Oswald', sans-serif;
   color: #F9D630;
-  background: #545454; 
 
 }
 
 .home h2 {
+  font-family: inherit
   color: #545456; 
   font-size: 1.1em;
   font-weight: bold;
   line-height: 1.25em;
   margin: 10px 0 20px 5px;
-  padding: 10px;
+  padding: 5px;
 }
    
 
@@ -1387,7 +1391,7 @@ width: 440px;
 }
 
 #n_search {
-	position:relative;
+	position:relative 10px;
 	padding:9px;
 	margin:10px 0 4px;
 	border:2px solid white;
