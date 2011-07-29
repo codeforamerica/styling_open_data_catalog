@@ -1218,21 +1218,21 @@ color: #333; margin-bottom: 5px;
    ------------------------------------------------- */
   a.submit_data{
     background: url(images/background_search.gif) repeat-x;
-    border: 2px solid white;
+    border: 2px solid #fff;
     color: #555;
     display: block;
-    font-size: 21px;
+    font-size: 28px;
     font-weight: bold;
-    margin: 40px auto;
-    padding: 19px;
+    margin: 50px auto;
+    padding: 20px;
     text-align: center;
-    width: 557px;
-    -moz-border-radius: 0.8px;
-    border-radius: 3px;
-    -moz-box-shadow: 0 0 4px #CCC;
-    -webkit-box-shadow: 0 0 4px #CCC;
-    box-shadow: 0 0 4px #CCC;
-    }
+    width: 56px;
+    -moz-border-radius: 3px;
+    border-radius:3px;
+    -moz-box-shadow: 0 0 4px #ccc;
+    -webkit-box-shadow: 0 0 4px #ccc;
+    box-shadow: 0 0 4px #ccc;
+  }
   a.submit_data:hover{
     background: rgba(255, 222, 22, .8);
     color: #222;
